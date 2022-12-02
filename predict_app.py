@@ -1,5 +1,4 @@
 import streamlit as st
-from tensorflow import keras
 from keras.models import load_model 
 from keras.preprocessing.text import tokenizer_from_json
 from keras.utils import pad_sequences
