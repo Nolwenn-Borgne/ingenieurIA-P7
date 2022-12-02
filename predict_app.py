@@ -1,19 +1,19 @@
 import streamlit as st
-#from tensorflow import keras
+from tensorflow import keras
 from keras.models import load_model 
 from keras.preprocessing.text import tokenizer_from_json
 from keras.utils import pad_sequences
 import re
 import json
 import string
-#import nltk
+import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
-#nltk.download('punkt')
-#nltk.download('wordnet')
-#nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('stopwords')
 
 # chargement et  mise en cache du modèle
 @st.experimental_singleton
